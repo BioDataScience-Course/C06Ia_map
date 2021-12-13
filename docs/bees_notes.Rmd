@@ -10,4 +10,4 @@ knitr::opts_chunk$set(echo = TRUE)
 # ... importation des packages nécessaires ici
 ```
 
-<!-- Réalisez 2 à 5 cartes ici. Commentez-les et justifiez vos choix -->
+<!--% Réalisez 3 à 5 cartes ici. Commentez-les et justifiez vos choix. -->

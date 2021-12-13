@@ -1,4 +1,4 @@
-# Exploration et proposition d'une carte en exemple
+# Carte exemple
 
 # Packages ----
 SciViews::R
@@ -12,7 +12,7 @@ class(be)
 bee <- read("data/wild_bees_belgium.rds")
 class(bee)
 
-# Première carte peu concluante
+# Première carte (pas très lisible)
 tm_shape(be) +
   tm_borders() +
   tm_shape(bee) +
@@ -48,7 +48,8 @@ bee <- left_join(tab, bee, by = "nrow")
 bee %>.%
   filter(., family ==  "Megachilidae") %>.%
   group_by(., NISCode)%>.%
-  summarise(., tot = length(individualCount)) -> mega
+  summarise(., tot = length(individualCount)) ->
+  mega
 
 be_mega <- left_join(be, mega, by = "NISCode")
 
@@ -62,6 +63,5 @@ mega_map <- tm_shape(be_mega) +
 
 mega_map
 
-# Sauvegarde pour inclure la carte example dans README.md sans la recalculer
-#tmap_save(mega_map, "images/mega_map.png", dpi = 100)
-
+# Sauvegarde pour inclure la carte exemple dans README.md sans la recalculer
+#tmap_save(mega_map, "figures/mega_map.png", dpi = 100)
