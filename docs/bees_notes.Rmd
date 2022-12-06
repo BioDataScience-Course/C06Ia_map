@@ -3,7 +3,15 @@ title: "Cartographie des abeilles sauvages en Belgique en 2016"
 author: "___"
 date: "___"
 output: html_document
+lang: "fr"
+bibliography: "references.bib"
 ---
+
+# Introduction
+
+Le projet BELBEES étudie le déclin des abeilles sauvages en Belgique [@rasmont2019].
+
+# Cartes
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -11,3 +19,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 <!--% Réalisez 3 à 5 cartes ici. Commentez-les et justifiez vos choix. -->
+
+# Bibliographie
