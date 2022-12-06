@@ -1,9 +1,7 @@
 # Carte exemple
 
 # Packages ----
-SciViews::R
-library(sf)
-library(tmap)
+SciViews::R("spatial")
 
 # Importation des données
 be <- st_read("data/map_belgium/belgium.shp")

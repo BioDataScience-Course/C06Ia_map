@@ -8,9 +8,7 @@
 # puissent être reproduites à partir du clonage de votre dépôt Github).
 
 # Packages ----
-SciViews::R
-library(sf)
-library(tmap)
+SciViews::R("spatial")
 # également nécessaires, mais non chargés directement
 #library(mapview)
 #library(pryr)
