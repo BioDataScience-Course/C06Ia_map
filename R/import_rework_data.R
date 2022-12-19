@@ -37,7 +37,7 @@ bee <- read$tsv(bee_data)
 table(bee$year)
 
 # On se concentre sur les observations de 2016
-bee_2016 <- filter(bee, year == "2016")
+bee_2016 %<-% filter(bee, year == "2016")
 str(bee_2016)
 class(bee_2016)
 nrow(bee_2016)
